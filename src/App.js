@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-import Product from "./Product/Product.js";
+import Products from "./Products/Products.js";
 
 export default function App() {
   return (
     <div>
-      <Product />
+      <Products />
     </div>
   );
 }
