@@ -3,18 +3,21 @@ import productStyles from "./product.module.css";
 
 const Product = props => {
   return (
-    <div>
+    <div className={productStyles.details}>
       {props.product.map(p => {
         return (
-          <div className={productStyles.details}>
+          <div className={productStyles.product}>
             <a
-              // style={{ color: "black", textDecoration: "none" }}
+              style={{ color: "black", textDecoration: "none" }}
               href={p.links.www}
               target="_blank"
             >
               <p>{p.name}</p>
             </a>
-            <img src={p.hero.href} />
+            <img
+              style={{ maxWidth: "100%" }}
+              src={p.hero.href}
+            />
             <p>$</p>
           </div>
         );

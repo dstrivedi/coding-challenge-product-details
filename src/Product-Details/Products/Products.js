@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Product from "../Product/Product.js";
 
-import styles from "./product.module.css";
+import styles from "./products.module.css";
 
 class Products extends Component {
   state = {
@@ -24,11 +24,7 @@ class Products extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <Product product={this.state.productData} />
-      </div>
-    );
+    return <Product product={this.state.productData} />;
   }
 }
 
