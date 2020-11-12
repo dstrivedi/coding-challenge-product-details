@@ -15,7 +15,7 @@ const Product = props => {
               <p>{p.name}</p>
             </a>
             <img
-              style={{ maxWidth: "100%" }}
+              style={{ maxWidth: "100%", height: "100%" }}
               src={p.hero.href}
             />
             <p>$</p>
