@@ -5,7 +5,7 @@ const Product = props => {
   return (
     <div>
       <p>
-        {this.props.product.map(p => {
+        {props.product.map(p => {
           return (
             <div className={productStyles.details}>
               <a
